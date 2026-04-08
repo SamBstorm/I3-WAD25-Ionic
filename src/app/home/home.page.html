@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-buttons slot="start">
+      <button>🏠</button>
+    </ion-buttons>
+    <ion-title slot="end">
+      Accueil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large" slot="end">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <button (click)="onClickBottom()">Vers le bas</button>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quis, officia non reiciendis esse, quidem repellat minus natus deleniti, cum libero accusantium dignissimos. Quae facere perferendis, facilis, nobis culpa ad nulla iste suscipit maxime autem excepturi! Officia nemo fuga, mollitia deserunt tempora aliquam quis consequuntur vero dolorem ratione? Impedit nisi quae praesentium corrupti nobis inventore veniam sit porro iusto aliquam facere iste modi minima, dolore in vitae dolorum quia nihil tempore assumenda obcaecati. Laboriosam consectetur aut consequatur nobis molestias inventore quas dolorum officia, molestiae maiores, cupiditate suscipit delectus dolorem dolor incidunt corrupti? Possimus dolor consequatur qui recusandae maxime libero expedita ipsa corporis minima provident repellendus nesciunt neque sequi, accusamus vitae magni. Harum culpa eos explicabo facere illo, voluptatibus quam eius debitis itaque voluptas odio laudantium incidunt perferendis cum tempora necessitatibus sunt voluptatem maiores provident. Nesciunt est quis, veritatis incidunt eum accusantium libero, voluptatibus reprehenderit omnis debitis quam dolorum atque corporis eligendi ducimus ullam soluta porro reiciendis maiores fuga numquam eos. Autem nobis nemo incidunt unde dolor neque sapiente omnis obcaecati quaerat porro dolorum eaque, distinctio earum possimus perferendis quam, recusandae culpa? Corporis, reprehenderit officiis nam quasi cum assumenda non consequuntur dolore architecto magnam mollitia dignissimos accusamus, ipsa provident! Voluptatem delectus blanditiis quia officia necessitatibus libero obcaecati dolorum quasi, earum nihil, eligendi, molestias natus quo inventore suscipit laudantium eos assumenda sed autem odio debitis voluptates? Facilis exercitationem perferendis vero, sapiente laboriosam fugiat veniam dolores laborum voluptas rem debitis laudantium accusantium dolor asperiores ab, vel voluptatum eaque molestias harum, aut ad sed nam mollitia. Perferendis ut ducimus repellendus optio quam debitis numquam neque fugiat, saepe blanditiis pariatur sint quos dolorum, atque vel minus nesciunt deserunt culpa molestiae nihil. Recusandae obcaecati dicta reiciendis cupiditate quasi. Mollitia similique commodi quo facilis dolorem nulla optio, reprehenderit tempore ab eaque fugiat placeat laborum eligendi hic impedit necessitatibus dignissimos magnam? Reiciendis, voluptatibus natus, modi minima consequuntur officiis illum maiores hic accusantium inventore delectus perspiciatis perferendis sapiente eveniet tempore veniam amet eius repudiandae exercitationem quia aliquid, sunt est odit! Ratione ipsam et recusandae alias repudiandae? Soluta harum hic incidunt pariatur ipsa voluptatibus veritatis temporibus perferendis voluptates ex excepturi debitis, corrupti sed odit eum expedita inventore culpa esse assumenda explicabo vero reprehenderit ipsam distinctio? Corrupti unde neque voluptas pariatur, vel, excepturi facere quod voluptates nulla eveniet distinctio blanditiis fugit et. Asperiores eos hic sunt, cupiditate ex sapiente, natus magnam soluta autem nam beatae quos, aliquid aperiam recusandae labore praesentium qui unde corrupti quisquam facilis repudiandae! Tenetur laudantium et inventore est aliquam cumque unde asperiores quisquam? Sapiente voluptatum sunt excepturi repellendus consequuntur soluta doloribus laborum quam, possimus atque iusto rerum a ullam! Non officiis blanditiis, expedita aperiam at neque natus magni, cum minima unde voluptatibus doloribus cumque. Voluptates saepe eius ratione, temporibus pariatur, facere a perferendis distinctio modi veritatis assumenda culpa nihil et animi nostrum ullam dolore officiis laborum iure exercitationem. Aperiam temporibus aliquid, quo libero sed saepe tenetur incidunt repellendus. Qui, et vero! Debitis consequatur eveniet sit distinctio doloribus vel dolorum sed necessitatibus rem inventore quaerat, laboriosam illo temporibus!</p>
+  <button (click)="onClickTop()">Vers le haut</button>
 </ion-content>

@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>grid</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">grid</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>12 colonnes</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>4 colonnes</ion-col>
+      <ion-col>4 colonnes</ion-col>
+      <ion-col>4 colonnes</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>2.4 colonnes</ion-col>
+      <ion-col>2.4 colonnes</ion-col>
+      <ion-col>2.4 colonnes</ion-col>
+      <ion-col>2.4 colonnes</ion-col>
+      <ion-col>2.4 colonnes</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col push="6">1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col pull="7">3</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
