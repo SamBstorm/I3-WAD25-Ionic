@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">list</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  @if(students){
+    <ion-list inset lines="full">
+      <ion-item-group>
+        <ion-item-divider>
+          <ion-label>Commence par C</ion-label>
+        </ion-item-divider>
+      </ion-item-group>
+        @for(stu of students; track $index){
+          <ion-item>
+            <ion-label>
+              {{stu}}
+              @if(stu === "Yuliia"){
+                <ion-icon name="gift-outline"></ion-icon>
+              }
+            </ion-label>
+          </ion-item>
+        }
+    </ion-list>
+  }
+  @else {
+    <p>Pas d'étudiant...</p>
+  }
+</ion-content>

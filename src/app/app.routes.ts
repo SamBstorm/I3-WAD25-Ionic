@@ -18,4 +18,8 @@ export const routes: Routes = [
     path: 'grid',
     loadComponent: () => import('./pages/grid/grid.page').then( m => m.GridPage)
   },
+  {
+    path: 'list',
+    loadComponent: () => import('./pages/list/list.page').then( m => m.ListPage)
+  },
 ];

@@ -1,10 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>grid</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<app-main-menu></app-main-menu>
+<ion-content id="mainContent" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">grid</ion-title>
@@ -31,6 +36,10 @@
       <ion-col push="6">1</ion-col>
       <ion-col>2</ion-col>
       <ion-col pull="7">3</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col sizeSm="6" size="8" sizeLg="4">Cellule adaptative</ion-col>
+      <ion-col>Taille fixe</ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

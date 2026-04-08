@@ -1,15 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <button>🏠</button>
+      <button>
+        <ion-icon name="home"></ion-icon>
+      </button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title slot="end">
       Accueil
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="onScroll($event)">
+<app-main-menu></app-main-menu>
+<ion-content id="mainContent" [fullscreen]="true" [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large" slot="end">Blank</ion-title>

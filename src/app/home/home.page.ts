@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, IonIcon, IonMenuButton } from '@ionic/angular/standalone';
+import { MainMenuComponent } from "../shared/components/main-menu/main-menu.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButtons],
+  imports: [IonIcon, IonHeader, IonToolbar, IonTitle, IonContent, IonButtons, MainMenuComponent, IonMenuButton],
 })
 export class HomePage {
   @ViewChild(IonContent) content! : IonContent;
